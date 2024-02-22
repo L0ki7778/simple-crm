@@ -1,0 +1,21 @@
+<mat-drawer-container class="drawer-container" autosize>
+    <mat-drawer #drawer class="sidenav" mode="side" [opened]="true">
+        <div class="logo-container">
+            Logo
+        </div>
+        <ul class="nav-list">
+            <li routerLink="/dashboard" routerLinkActive="router-link-active"><mat-icon>fact_check</mat-icon> Dashboard</li>
+            <li routerLink="/user" routerLinkActive="router-link-active"><mat-icon>perm_identity</mat-icon>User</li>
+        </ul>
+    </mat-drawer>
+    <mat-toolbar color="primary">
+        <button (click)="drawer.toggle()" mat-icon-button class="example-icon"
+            aria-label="Example icon-button with menu icon">
+            <mat-icon>menu</mat-icon>
+        </button>
+        <span>My App</span>
+    </mat-toolbar>
+    <div class="router-container">
+        <router-outlet></router-outlet>
+    </div>
+</mat-drawer-container>

@@ -1,0 +1,54 @@
+.drawer-container{
+    height: 100dvh;
+}
+
+.sidenav{
+    width: 300px;
+}
+
+.nav-list{
+    list-style: none;
+    padding: 0;
+    margin:0;
+
+    li{
+        display: flex;
+        height: 3rem;
+        align-items: center;
+        gap:1rem;
+        margin:.5rem 0;
+        padding: 0 1rem;
+        background-color: unset;
+        transition:all .1s ease;
+        &:hover{
+            cursor: pointer;
+            background-color: rgba(0,0,0,0.15);
+        }
+    }
+    
+}
+
+.router-link-active{
+    background-color: rgba(0,0,0,0.1);
+}
+
+.router-container{
+    padding: 1rem 0 0 1rem;
+}
+
+.logo-container{
+    height: 55px;
+    border-bottom: 2px solid rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    padding: 0 16px
+    
+ }
+
+ mat-toolbar{
+    height: 56px;
+
+    span{
+        margin: 0 16px;
+    }
+ }
