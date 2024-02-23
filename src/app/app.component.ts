@@ -11,5 +11,5 @@ import { ToolbarComponent } from './toolbar/toolbar.component';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'CRM';
+  title = 'simple-crm';
 }
