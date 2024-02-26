@@ -1,5 +1,5 @@
 import { Component, inject } from '@angular/core';
-import { MatDialogModule } from '@angular/material/dialog';
+import { MatDialogModule, MatDialogRef } from '@angular/material/dialog';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatDatepickerModule } from '@angular/material/datepicker';
@@ -7,8 +7,9 @@ import { provideNativeDateAdapter } from '@angular/material/core';
 import { MatButton } from '@angular/material/button';
 import { User } from '../../models/user.class';
 import { FormsModule } from '@angular/forms';
-import { addDoc } from '@angular/fire/firestore';
-import { Firestore, collectionData,onSnapshot, collection } from '@angular/fire/firestore';
+import { MatProgressBarModule } from '@angular/material/progress-bar';
+import { FirestoreService } from '../firestore.service';
+import { NgIf } from '@angular/common';
 
 @Component({
   selector: 'app-dialog-add-user',
@@ -20,7 +21,9 @@ import { Firestore, collectionData,onSnapshot, collection } from '@angular/fire/
     MatFormFieldModule,
     MatDatepickerModule,
     MatButton,
-    FormsModule
+    FormsModule,
+    MatProgressBarModule,
+    NgIf
   ],
   templateUrl: './dialog-add-user.component.html',
   styleUrl: './dialog-add-user.component.scss'
@@ -29,16 +32,19 @@ import { Firestore, collectionData,onSnapshot, collection } from '@angular/fire/
 export class DialogAddUserComponent {
   user: User = new User();
   birthDate?: Date;
+  fireService = inject(FirestoreService)
+  isLoading = false;
 
-  constructor(private fireStore: Firestore) { }
+  constructor(public dialogRef: MatDialogRef<DialogAddUserComponent>) { }
 
-  saveUser() {
-    if(this.birthDate){
-    this.user.birthDate = this.birthDate.getTime();
-    addDoc(collection(this.fireStore, "users"), this.user.toJSON())
-    .then((result:any)=>{
-      console.log(result)
-    })}
+  async saveUser() {
+    this.isLoading = true;
+      if (this.birthDate) {
+        this.user.timestamp = new Date().getTime();
+        this.user.birthDate = this.birthDate.getTime();
+        await this.fireService.addUser(this.user)
+        this.isLoading = false;
+        this.dialogRef.close()
+      }
   }
-  
 }

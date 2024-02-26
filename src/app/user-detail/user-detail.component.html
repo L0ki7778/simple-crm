@@ -1,0 +1,18 @@
+<mat-card>
+    <mat-card-content>
+        <button id="user-menu-btn" mat-icon-button [matMenuTriggerFor]="userMenu" >
+            <mat-icon>more_vert</mat-icon>
+        </button>
+        <mat-menu #userMenu="matMenu" xPosition="before">
+            <button mat-menu-item (click)="editUserData()">Edit</button>
+            <!-- <button mat-menu-item>Item 2</button> -->
+          </mat-menu>
+          @if(!loadingUser){
+              <p>{{user.firstName}}</p>
+              <p>{{user.lastName}}</p>
+              <p>{{user.email}}</p>
+              <p>{{user.birthDate}}</p>
+              <p>{{user.timestamp}}</p>
+          }
+    </mat-card-content>
+</mat-card>

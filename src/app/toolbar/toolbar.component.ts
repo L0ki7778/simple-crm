@@ -4,6 +4,7 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
+import { CalendarComponent } from '../calendar/calendar.component';
 
 
 @Component({
@@ -16,7 +17,8 @@ import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
     MatSidenavModule,
     RouterOutlet,
     RouterLink,
-    RouterLinkActive
+    RouterLinkActive,
+    CalendarComponent
   ],
   templateUrl: './toolbar.component.html',
   styleUrl: './toolbar.component.scss'

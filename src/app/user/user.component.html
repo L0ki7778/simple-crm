@@ -1,9 +1,21 @@
-<button #addUser 
-id="add-user-btn"
-mat-fab color="primary"
-aria-label="Example icon button with a delete icon"
-matTooltip="Add user"
-(click)="openDialog()"
->
-    <mat-icon>add</mat-icon>
-  </button>
+<mat-card>
+  <table>
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+      <th>City</th>
+    </tr>
+    @for(item of fireService.userList; track item.firstName) {
+      <tr routerLink="/user/{{item.id}}">
+        <td>{{item.firstName}} {{item.lastName}}</td>
+        <td>{{item.email}}</td>
+        <td>{{item.city}}</td>
+      </tr>
+    }
+  </table>
+</mat-card>
+
+<button #addUser id="add-user-btn" mat-fab color="primary" aria-label="Example icon button with a delete icon"
+  matTooltip="Add user" (click)="openDialog()">
+  <mat-icon>add</mat-icon>
+</button>

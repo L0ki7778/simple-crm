@@ -1,0 +1,117 @@
+{
+    "users": [
+      {
+        "id": "1",
+        "username": "john_doe",
+        "email": "john@example.com",
+        "password": "hashed_password"
+      },
+      {
+        "id": "2",
+        "username": "jane_smith",
+        "email": "jane@example.com",
+        "password": "hashed_password"
+      }
+    ],
+    "customers": [
+      {
+        "id": "1",
+        "name": "Michael Johnson",
+        "email": "michael@example.com",
+        "phone": "123-456-7890",
+        "notes": "Interested in buying a house in downtown area.",
+        "creditScore": 750,
+        "employmentStatus": "Employed",
+        "annualIncome": 80000,
+        "estimatedExpenses": 2500,
+        "netMonthlyIncome": 5500
+      },
+      {
+        "id": "2",
+        "name": "Emily Brown",
+        "email": "emily@example.com",
+        "phone": "987-654-3210",
+        "notes": "Looking for rental properties in suburban neighborhoods.",
+        "creditScore": 680,
+        "employmentStatus": "Freelancer",
+        "annualIncome": 60000,
+        "estimatedExpenses": 2000,
+        "netMonthlyIncome": 4000
+      }
+    ],
+    "properties": [
+      {
+        "id": "1",
+        "address": "123 Main St",
+        "city": "Anytown",
+        "state": "CA",
+        "zipcode": "12345",
+        "type": "Single Family Home",
+        "price": 350000,
+        "status": "available",
+        "description": "Charming 3-bedroom house in a quiet neighborhood.",
+        "monthlyCosts": 1500,
+        "financingOptions": [
+          {
+            "lender": "Bank of Anytown",
+            "interestRate": 4.5,
+            "loanAmount": 280000,
+            "durationMonths": 360,
+            "monthlyPayment": 1419.47
+          },
+          {
+            "lender": "Credit Union of Otherville",
+            "interestRate": 4.0,
+            "loanAmount": 300000,
+            "durationMonths": 360,
+            "monthlyPayment": 1432.25
+          }
+        ]
+      },
+      {
+        "id": "2",
+        "address": "456 Elm St",
+        "city": "Otherville",
+        "state": "NY",
+        "zipcode": "54321",
+        "type": "Condo",
+        "price": 250000,
+        "status": "in negotiation",
+        "description": "Modern condo with amenities, close to public transportation.",
+        "monthlyCosts": 1200,
+        "financingOptions": [
+          {
+            "lender": "Otherville Mortgage Corp",
+            "interestRate": 4.25,
+            "loanAmount": 200000,
+            "durationMonths": 360,
+            "monthlyPayment": 981.62
+          },
+          {
+            "lender": "New York Community Bank",
+            "interestRate": 4.2,
+            "loanAmount": 220000,
+            "durationMonths": 360,
+            "monthlyPayment": 1076.07
+          }
+        ]
+      }
+    ],
+    "appointments": [
+      {
+        "id": "1",
+        "customerId": "1",
+        "propertyId": "1",
+        "dateTime": "2024-02-27T10:00:00",
+        "notes": "Scheduled property viewing"
+      },
+      {
+        "id": "2",
+        "customerId": "2",
+        "propertyId": "2",
+        "dateTime": "2024-03-05T14:00:00",
+        "notes": "Meeting to discuss rental options"
+      }
+    ]
+  }
+  

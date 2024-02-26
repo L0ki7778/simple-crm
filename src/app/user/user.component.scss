@@ -1,5 +1,42 @@
-#add-user-btn{
+#add-user-btn {
     position: absolute;
     bottom: 2rem;
     right: 2rem;
+}
+
+table {
+    border-collapse: collapse;
+    tr:first-child {
+        border-bottom: rgba(0, 0, 0, 0.25) 2px solid;
+        border-top: 0px solid transparent;
+       &:hover{
+           background-color: unset;
+           cursor:unset;
+        } 
+    }
+    tr {
+        border-top: rgba(0, 0, 0, 0.25) 1px solid;
+        height: 3rem;
+
+        &:hover{
+            background-color: rgba(0, 0, 0, 0.05);
+            cursor: pointer;
+        }
+    }
+
+    tr {
+        th{
+            color:rgba(0, 0, 0, 0.35)
+        }
+        th,td {
+            text-align: start;
+        }
+        th:first-child,td:first-child {
+            padding-left: 1rem;
+        }
+        th:last-child,td:last-child {
+            padding-right: 1rem;
+            width: 20%;
+        }
+    }
 }

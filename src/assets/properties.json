@@ -1,0 +1,938 @@
+[
+    {
+        "id": "1",
+        "address": "Hauptstraße 14",
+        "city": "Berlin",
+        "state": "Berlin",
+        "zipcode": "10115",
+        "type": "Einfamilienhaus",
+        "price": 350000,
+        "status": "verfügbar",
+        "description": "Ein charmantes 3-Zimmer-Haus in einer ruhigen Nachbarschaft.",
+        "monthlyCosts": 1500,
+        "owners": [
+            {
+                "name": "Bank der Hauptstadt",
+                "type": "Bank",
+                "contact": {
+                    "phone": "+49 30 1234567",
+                    "email": "info@bankderhauptstadt.de",
+                    "address": "Hauptstraße 1, 10115 Berlin"
+                }
+            }
+        ],
+        "financingOptions": [
+            {
+                "lender": "Bank der Hauptstadt",
+                "interestRate": 4.5,
+                "loanAmount": 280000,
+                "durationMonths": 360,
+                "monthlyPayment": 1419.47
+            },
+            {
+                "lender": "Kreditgenossenschaft des Nordens",
+                "interestRate": 4.0,
+                "loanAmount": 300000,
+                "durationMonths": 360,
+                "monthlyPayment": 1432.25
+            }
+        ]
+    },
+    {
+        "id": "8",
+        "address": "Seestraße 20",
+        "city": "Hamburg",
+        "state": "Hamburg",
+        "zipcode": "22089",
+        "type": "Reihenhaus",
+        "price": 420000,
+        "status": "verfügbar",
+        "description": "Ein modernes Reihenhaus mit Garten in der Nähe des Stadtparks.",
+        "monthlyCosts": 1700,
+        "owners": [
+            {
+                "name": "Herr und Frau Schmidt",
+                "type": "Privatperson",
+                "contact": {
+                    "phone": "+49 40 9876543",
+                    "email": "familie.schmidt@example.com",
+                    "address": "Seestraße 20, 22089 Hamburg"
+                }
+            }
+        ],
+        "financingOptions": [
+            {
+                "lender": "Norddeutsche Bank",
+                "interestRate": 4.2,
+                "loanAmount": 320000,
+                "durationMonths": 360,
+                "monthlyPayment": 1615.48
+            },
+            {
+                "lender": "Sparkasse Hamburg",
+                "interestRate": 4.0,
+                "loanAmount": 340000,
+                "durationMonths": 360,
+                "monthlyPayment": 1636.41
+            }
+        ]
+    },
+    {
+        "id": "9",
+        "address": "Lindenstraße 12",
+        "city": "München",
+        "state": "Bayern",
+        "zipcode": "80335",
+        "type": "Wohnung",
+        "price": 320000,
+        "status": "verfügbar",
+        "description": "Eine gemütliche 2-Zimmer-Wohnung in der Nähe des Englischen Gartens.",
+        "monthlyCosts": 1300,
+        "owners": [
+            {
+                "name": "Frau Wagner",
+                "type": "Privatperson",
+                "contact": {
+                    "phone": "+49 89 654321",
+                    "email": "wagner.m@example.com",
+                    "address": "Lindenstraße 12, 80335 München"
+                }
+            }
+        ],
+        "financingOptions": [
+            {
+                "lender": "Münchner Bank",
+                "interestRate": 3.8,
+                "loanAmount": 250000,
+                "durationMonths": 240,
+                "monthlyPayment": 1267.16
+            },
+            {
+                "lender": "Bayern Genossenschaftsbank",
+                "interestRate": 3.6,
+                "loanAmount": 270000,
+                "durationMonths": 240,
+                "monthlyPayment": 1285.95
+            }
+        ]
+    },
+    {
+        "id": "10",
+        "address": "Kaiserstraße 5",
+        "city": "Frankfurt",
+        "state": "Hessen",
+        "zipcode": "60311",
+        "type": "Penthouse",
+        "price": 750000,
+        "status": "verfügbar",
+        "description": "Ein exklusives Penthouse mit Blick auf die Skyline von Frankfurt.",
+        "monthlyCosts": 3000,
+        "owners": [
+            {
+                "name": "Herr und Frau Becker",
+                "type": "Privatperson",
+                "contact": {
+                    "phone": "+49 69 8765432",
+                    "email": "becker.f@example.com",
+                    "address": "Kaiserstraße 5, 60311 Frankfurt"
+                }
+            }
+        ],
+        "financingOptions": [
+            {
+                "lender": "Frankfurter Bank",
+                "interestRate": 4.0,
+                "loanAmount": 550000,
+                "durationMonths": 360,
+                "monthlyPayment": 2777.87
+            },
+            {
+                "lender": "Hessen Hypothekenbank",
+                "interestRate": 3.8,
+                "loanAmount": 600000,
+                "durationMonths": 360,
+                "monthlyPayment": 2858.36
+            }
+        ]
+    },
+    {
+        "id": "11",
+        "address": "Schlossstraße 8",
+        "city": "Stuttgart",
+        "state": "Baden-Württemberg",
+        "zipcode": "70173",
+        "type": "Villa",
+        "price": 1500000,
+        "status": "verfügbar",
+        "description": "Eine prächtige Villa mit großem Garten in exklusiver Lage.",
+        "monthlyCosts": 5000,
+        "owners": [
+            {
+                "name": "Familie Mayer",
+                "type": "Privatperson",
+                "contact": {
+                    "phone": "+49 711 7654321",
+                    "email": "mayer.family@example.com",
+                    "address": "Schlossstraße 8, 70173 Stuttgart"
+                }
+            }
+        ],
+        "financingOptions": [
+            {
+                "lender": "Stuttgarter Bank",
+                "interestRate": 3.8,
+                "loanAmount": 1000000,
+                "durationMonths": 360,
+                "monthlyPayment": 4676.51
+            },
+            {
+                "lender": "Baden-Württembergische Hypothekenbank",
+                "interestRate": 3.5,
+                "loanAmount": 1100000,
+                "durationMonths": 360,
+                "monthlyPayment": 5028.04
+            }
+        ]
+    },
+    {
+        "id": "12",
+        "address": "Domplatz 1",
+        "city": "Köln",
+        "state": "Nordrhein-Westfalen",
+        "zipcode": "50667",
+        "type": "Eigentumswohnung",
+        "price": 400000,
+        "status": "verfügbar",
+        "description": "Eine stilvolle Eigentumswohnung im Herzen von Köln mit Blick auf den Dom.",
+        "monthlyCosts": 1800,
+        "owners": [
+            {
+                "name": "Herr und Frau Schulz",
+                "type": "Privatperson",
+                "contact": {
+                    "phone": "+49 221 654321",
+                    "email": "schulz@example.com",
+                    "address": "Domplatz 1, 50667 Köln"
+                }
+            }
+        ],
+        "financingOptions": [
+            {
+                "lender": "Kölner Bank",
+                "interestRate": 4.0,
+                "loanAmount": 300000,
+                "durationMonths": 360,
+                "monthlyPayment": 1518.43
+            },
+            {
+                "lender": "NRW Genossenschaftsbank",
+                "interestRate": 3.8,
+                "loanAmount": 320000,
+                "durationMonths": 360,
+                "monthlyPayment": 1538.85
+            }
+        ]
+    },
+    {
+        "id": "13",
+        "address": "Am Markt 3",
+        "city": "Düsseldorf",
+        "state": "Nordrhein-Westfalen",
+        "zipcode": "40213",
+        "type": "Stadthaus",
+        "price": 480000,
+        "status": "verfügbar",
+        "description": "Ein modernes Stadthaus mit Blick auf den Rhein.",
+        "monthlyCosts": 2000,
+        "owners": [
+            {
+                "name": "Herr und Frau Weber",
+                "type": "Privatperson",
+                "contact": {
+                    "phone": "+49 211 9876543",
+                    "email": "weber@example.com",
+                    "address": "Am Markt 3, 40213 Düsseldorf"
+                }
+            }
+        ],
+        "financingOptions": [
+            {
+                "lender": "Düsseldorfer Bank",
+                "interestRate": 4.2,
+                "loanAmount": 350000,
+                "durationMonths": 360,
+                "monthlyPayment": 1768.91
+            },
+            {
+                "lender": "NRW Genossenschaftsbank",
+                "interestRate": 4.0,
+                "loanAmount": 370000,
+                "durationMonths": 360,
+                "monthlyPayment": 1790.31
+            }
+        ]
+    },
+    {
+        "id": "14",
+        "address": "Kaiser-Wilhelm-Ring 22",
+        "city": "Bonn",
+        "state": "Nordrhein-Westfalen",
+        "zipcode": "53113",
+        "type": "Eigentumswohnung",
+        "price": 300000,
+        "status": "verfügbar",
+        "description": "Eine helle Eigentumswohnung in zentraler Lage von Bonn.",
+        "monthlyCosts": 1400,
+        "owners": [
+            {
+                "name": "Frau Müller",
+                "type": "Privatperson",
+                "contact": {
+                    "phone": "+49 228 7654321",
+                    "email": "mueller@example.com",
+                    "address": "Kaiser-Wilhelm-Ring 22, 53113 Bonn"
+                }
+            }
+        ],
+        "financingOptions": [
+            {
+                "lender": "Bonn Bank",
+                "interestRate": 4.0,
+                "loanAmount": 220000,
+                "durationMonths": 240,
+                "monthlyPayment": 1110.43
+            },
+            {
+                "lender": "NRW Genossenschaftsbank",
+                "interestRate": 3.8,
+                "loanAmount": 240000,
+                "durationMonths": 240,
+                "monthlyPayment": 1129.86
+            }
+        ]
+    },
+    {
+        "id": "15",
+        "address": "Rheinuferstraße 5",
+        "city": "Koblenz",
+        "state": "Rheinland-Pfalz",
+        "zipcode": "56068",
+        "type": "Apartment",
+        "price": 250000,
+        "status": "verfügbar",
+        "description": "Ein geräumiges Apartment mit Blick auf den Rhein.",
+        "monthlyCosts": 1100,
+        "owners": [
+            {
+                "name": "Frau Schneider",
+                "type": "Privatperson",
+                "contact": {
+                    "phone": "+49 261 8765432",
+                    "email": "schneider@example.com",
+                    "address": "Rheinuferstraße 5, 56068 Koblenz"
+                }
+            }
+        ],
+        "financingOptions": [
+            {
+                "lender": "Koblenzer Bank",
+                "interestRate": 3.8,
+                "loanAmount": 180000,
+                "durationMonths": 240,
+                "monthlyPayment": 905.66
+            },
+            {
+                "lender": "Rheinland-Pfälzische Genossenschaftsbank",
+                "interestRate": 3.5,
+                "loanAmount": 200000,
+                "durationMonths": 240,
+                "monthlyPayment": 922.17
+            }
+        ]
+    },
+    {
+        "id": "16",
+        "address": "Hermannstraße 10",
+        "city": "Dresden",
+        "state": "Sachsen",
+        "zipcode": "01067",
+        "type": "Einfamilienhaus",
+        "price": 380000,
+        "status": "verfügbar",
+        "description": "Ein charmantes Einfamilienhaus mit großem Garten in ruhiger Lage.",
+        "monthlyCosts": 1600,
+        "owners": [
+            {
+                "name": "Familie Schmidt",
+                "type": "Privatperson",
+                "contact": {
+                    "phone": "+49 351 9876543",
+                    "email": "schmidt@example.com",
+                    "address": "Hermannstraße 10, 01067 Dresden"
+                }
+            }
+        ],
+        "financingOptions": [
+            {
+                "lender": "Dresdner Bank",
+                "interestRate": 4.2,
+                "loanAmount": 280000,
+                "durationMonths": 360,
+                "monthlyPayment": 1419.47
+            },
+            {
+                "lender": "Sächsische Genossenschaftsbank",
+                "interestRate": 4.0,
+                "loanAmount": 300000,
+                "durationMonths": 360,
+                "monthlyPayment": 1432.25
+            }
+        ]
+    },
+    {
+        "id": "17",
+        "address": "Rathausplatz 8",
+        "city": "Nürnberg",
+        "state": "Bayern",
+        "zipcode": "90403",
+        "type": "Wohnung",
+        "price": 290000,
+        "status": "verfügbar",
+        "description": "Eine moderne 2-Zimmer-Wohnung im Herzen von Nürnberg.",
+        "monthlyCosts": 1250,
+        "owners": [
+            {
+                "name": "Frau Wagner",
+                "type": "Privatperson",
+                "contact": {
+                    "phone": "+49 911 8765432",
+                    "email": "wagner.n@example.com",
+                    "address": "Rathausplatz 8, 90403 Nürnberg"
+                }
+            }
+        ],
+        "financingOptions": [
+            {
+                "lender": "Nürnberger Bank",
+                "interestRate": 3.9,
+                "loanAmount": 200000,
+                "durationMonths": 240,
+                "monthlyPayment": 1017.87
+            },
+            {
+                "lender": "Bayern Genossenschaftsbank",
+                "interestRate": 3.7,
+                "loanAmount": 220000,
+                "durationMonths": 240,
+                "monthlyPayment": 1035.29
+            }
+        ]
+    },
+    {
+        "id": "18",
+        "address": "Rheinstraße 15",
+        "city": "Mainz",
+        "state": "Rheinland-Pfalz",
+        "zipcode": "55116",
+        "type": "Penthouse",
+        "price": 850000,
+        "status": "verfügbar",
+        "description": "Ein luxuriöses Penthouse mit Blick auf den Rhein in exklusiver Lage.",
+        "monthlyCosts": 3500,
+        "owners": [
+            {
+                "name": "Herr und Frau Müller",
+                "type": "Privatperson",
+                "contact": {
+                    "phone": "+49 6131 7654321",
+                    "email": "mueller.mainz@example.com",
+                    "address": "Rheinstraße 15, 55116 Mainz"
+                }
+            }
+        ],
+        "financingOptions": [
+            {
+                "lender": "Mainzer Bank",
+                "interestRate": 3.7,
+                "loanAmount": 600000,
+                "durationMonths": 360,
+                "monthlyPayment": 2829.22
+            },
+            {
+                "lender": "Rheinland-Pfälzische Genossenschaftsbank",
+                "interestRate": 3.5,
+                "loanAmount": 650000,
+                "durationMonths": 360,
+                "monthlyPayment": 3035.04
+            }
+        ]
+    },
+    {
+        "id": "19",
+        "address": "Am Markt 10",
+        "city": "Hannover",
+        "state": "Niedersachsen",
+        "zipcode": "30159",
+        "type": "Stadtvilla",
+        "price": 1100000,
+        "status": "verfügbar",
+        "description": "Eine elegante Stadtvilla mit großem Garten nahe dem Zentrum von Hannover.",
+        "monthlyCosts": 4500,
+        "owners": [
+            {
+                "name": "Herr und Frau Schneider",
+                "type": "Privatperson",
+                "contact": {
+                    "phone": "+49 511 8765432",
+                    "email": "schneider.h@example.com",
+                    "address": "Am Markt 10, 30159 Hannover"
+                }
+            }
+        ],
+        "financingOptions": [
+            {
+                "lender": "Hannover Bank",
+                "interestRate": 3.8,
+                "loanAmount": 800000,
+                "durationMonths": 360,
+                "monthlyPayment": 3730.76
+            },
+            {
+                "lender": "Niedersächsische Hypothekenbank",
+                "interestRate": 3.5,
+                "loanAmount": 900000,
+                "durationMonths": 360,
+                "monthlyPayment": 4032.43
+            }
+        ]
+    },
+    {
+        "id": "20",
+        "address": "Schlossplatz 1",
+        "city": "Schwerin",
+        "state": "Mecklenburg-Vorpommern",
+        "zipcode": "19053",
+        "type": "Schloss",
+        "price": 2000000,
+        "status": "verfügbar",
+        "description": "Ein historisches Schloss mit großem Park in idyllischer Lage.",
+        "monthlyCosts": 8000,
+        "owners": [
+            {
+                "name": "Landesbank Mecklenburg-Vorpommern",
+                "type": "Bank",
+                "contact": {
+                    "phone": "+49 385 9876543",
+                    "email": "info@lbmv.de",
+                    "address": "Schlossplatz 1, 19053 Schwerin"
+                }
+            }
+        ],
+        "financingOptions": [
+            {
+                "lender": "Landesbank Mecklenburg-Vorpommern",
+                "interestRate": 3.5,
+                "loanAmount": 1500000,
+                "durationMonths": 360,
+                "monthlyPayment": 6734.63
+            },
+            {
+                "lender": "Mecklenburg-Vorpommern Genossenschaftsbank",
+                "interestRate": 3.2,
+                "loanAmount": 1600000,
+                "durationMonths": 360,
+                "monthlyPayment": 6868.86
+            }
+        ]
+    },
+    {
+        "id": "21",
+        "address": "Marktplatz 5",
+        "city": "Erfurt",
+        "state": "Thüringen",
+        "zipcode": "99084",
+        "type": "Fachwerkhaus",
+        "price": 350000,
+        "status": "verfügbar",
+        "description": "Ein liebevoll restauriertes Fachwerkhaus im historischen Zentrum von Erfurt.",
+        "monthlyCosts": 1800,
+        "owners": [
+            {
+                "name": "Familie Lehmann",
+                "type": "Privatperson",
+                "contact": {
+                    "phone": "+49 361 8765432",
+                    "email": "lehmann.erfurt@example.com",
+                    "address": "Marktplatz 5, 99084 Erfurt"
+                }
+            }
+        ],
+        "financingOptions": [
+            {
+                "lender": "Erfurter Bank",
+                "interestRate": 3.8,
+                "loanAmount": 250000,
+                "durationMonths": 240,
+                "monthlyPayment": 1267.16
+            },
+            {
+                "lender": "Thüringen Genossenschaftsbank",
+                "interestRate": 3.5,
+                "loanAmount": 270000,
+                "durationMonths": 240,
+                "monthlyPayment": 1285.95
+            }
+        ]
+    },
+    {
+        "id": "22",
+        "address": "Bahnhofstraße 3",
+        "city": "Halle (Saale)",
+        "state": "Sachsen-Anhalt",
+        "zipcode": "06112",
+        "type": "Mehrfamilienhaus",
+        "price": 550000,
+        "status": "verfügbar",
+        "description": "Ein gut gepflegtes Mehrfamilienhaus in zentraler Lage.",
+        "monthlyCosts": 2500,
+        "owners": [
+            {
+                "name": "Herr Schmidt",
+                "type": "Privatperson",
+                "contact": {
+                    "phone": "+49 345 7654321",
+                    "email": "schmidt.halle@example.com",
+                    "address": "Bahnhofstraße 3, 06112 Halle (Saale)"
+                }
+            }
+        ],
+        "financingOptions": [
+            {
+                "lender": "Halle Bank",
+                "interestRate": 4.0,
+                "loanAmount": 400000,
+                "durationMonths": 360,
+                "monthlyPayment": 1909.66
+            },
+            {
+                "lender": "Sachsen-Anhalt Genossenschaftsbank",
+                "interestRate": 3.8,
+                "loanAmount": 450000,
+                "durationMonths": 360,
+                "monthlyPayment": 2032.81
+            }
+        ]
+    },
+    {
+        "id": "23",
+        "address": "Wiesenweg 2",
+        "city": "Rostock",
+        "state": "Mecklenburg-Vorpommern",
+        "zipcode": "18057",
+        "type": "Doppelhaushälfte",
+        "price": 320000,
+        "status": "verfügbar",
+        "description": "Eine moderne Doppelhaushälfte mit schönem Garten in ruhiger Wohngegend.",
+        "monthlyCosts": 1500,
+        "owners": [
+            {
+                "name": "Familie Becker",
+                "type": "Privatperson",
+                "contact": {
+                    "phone": "+49 381 8765432",
+                    "email": "becker.rostock@example.com",
+                    "address": "Wiesenweg 2, 18057 Rostock"
+                }
+            }
+        ],
+        "financingOptions": [
+            {
+                "lender": "Rostocker Bank",
+                "interestRate": 4.0,
+                "loanAmount": 220000,
+                "durationMonths": 240,
+                "monthlyPayment": 1110.43
+            },
+            {
+                "lender": "Mecklenburg-Vorpommern Genossenschaftsbank",
+                "interestRate": 3.8,
+                "loanAmount": 240000,
+                "durationMonths": 240,
+                "monthlyPayment": 1129.86
+            }
+        ]
+    },
+    {
+        "id": "24",
+        "address": "Hafenstraße 10",
+        "city": "Kiel",
+        "state": "Schleswig-Holstein",
+        "zipcode": "24103",
+        "type": "Hafenhaus",
+        "price": 600000,
+        "status": "verfügbar",
+        "description": "Ein modernes Hafenhaus mit Blick auf die Kieler Förde.",
+        "monthlyCosts": 2500,
+        "owners": [
+            {
+                "name": "Herr und Frau Petersen",
+                "type": "Privatperson",
+                "contact": {
+                    "phone": "+49 431 9876543",
+                    "email": "petersen@example.com",
+                    "address": "Hafenstraße 10, 24103 Kiel"
+                }
+            }
+        ],
+        "financingOptions": [
+            {
+                "lender": "Kieler Bank",
+                "interestRate": 3.7,
+                "loanAmount": 400000,
+                "durationMonths": 360,
+                "monthlyPayment": 1856.68
+            },
+            {
+                "lender": "Schleswig-Holstein Genossenschaftsbank",
+                "interestRate": 3.5,
+                "loanAmount": 450000,
+                "durationMonths": 360,
+                "monthlyPayment": 2028.32
+            }
+        ]
+    },
+    {
+        "id": "25",
+        "address": "Ludwigstraße 7",
+        "city": "Wiesbaden",
+        "state": "Hessen",
+        "zipcode": "65185",
+        "type": "Altbauwohnung",
+        "price": 380000,
+        "status": "verfügbar",
+        "description": "Eine geräumige Altbauwohnung im beliebten Westend von Wiesbaden.",
+        "monthlyCosts": 1600,
+        "owners": [
+            {
+                "name": "Frau Schneider",
+                "type": "Privatperson",
+                "contact": {
+                    "phone": "+49 611 8765432",
+                    "email": "schneider.wiesbaden@example.com",
+                    "address": "Ludwigstraße 7, 65185 Wiesbaden"
+                }
+            }
+        ],
+        "financingOptions": [
+            {
+                "lender": "Wiesbadener Bank",
+                "interestRate": 3.8,
+                "loanAmount": 250000,
+                "durationMonths": 240,
+                "monthlyPayment": 1267.16
+            },
+            {
+                "lender": "Hessen Genossenschaftsbank",
+                "interestRate": 3.5,
+                "loanAmount": 270000,
+                "durationMonths": 240,
+                "monthlyPayment": 1285.95
+            }
+        ]
+    },
+    {
+        "id": "26",
+        "address": "Rheinstraße 1",
+        "city": "Düsseldorf",
+        "state": "Nordrhein-Westfalen",
+        "zipcode": "40213",
+        "type": "Loft",
+        "price": 950000,
+        "status": "verfügbar",
+        "description": "Ein beeindruckendes Loft mit Industriecharme am Rheinufer.",
+        "monthlyCosts": 4000,
+        "owners": [
+            {
+                "name": "Herr Müller",
+                "type": "Privatperson",
+                "contact": {
+                    "phone": "+49 211 7654321",
+                    "email": "mueller.duesseldorf@example.com",
+                    "address": "Rheinstraße 1, 40213 Düsseldorf"
+                }
+            }
+        ],
+        "financingOptions": [
+            {
+                "lender": "Düsseldorfer Bank",
+                "interestRate": 4.0,
+                "loanAmount": 650000,
+                "durationMonths": 360,
+                "monthlyPayment": 3101.42
+            },
+            {
+                "lender": "Nordrhein-Westfalen Genossenschaftsbank",
+                "interestRate": 3.8,
+                "loanAmount": 700000,
+                "durationMonths": 360,
+                "monthlyPayment": 3229.72
+            }
+        ]
+    },
+    {
+        "id": "27",
+        "address": "Friedrichstraße 15",
+        "city": "Potsdam",
+        "state": "Brandenburg",
+        "zipcode": "14467",
+        "type": "Stadthaus",
+        "price": 420000,
+        "status": "verfügbar",
+        "description": "Ein charmantes Stadthaus im historischen Zentrum von Potsdam.",
+        "monthlyCosts": 1800,
+        "owners": [
+            {
+                "name": "Frau Wagner",
+                "type": "Privatperson",
+                "contact": {
+                    "phone": "+49 331 8765432",
+                    "email": "wagner.potsdam@example.com",
+                    "address": "Friedrichstraße 15, 14467 Potsdam"
+                }
+            }
+        ],
+        "financingOptions": [
+            {
+                "lender": "Potsdamer Bank",
+                "interestRate": 3.8,
+                "loanAmount": 280000,
+                "durationMonths": 240,
+                "monthlyPayment": 1419.47
+            },
+            {
+                "lender": "Brandenburger Genossenschaftsbank",
+                "interestRate": 3.5,
+                "loanAmount": 300000,
+                "durationMonths": 240,
+                "monthlyPayment": 1432.25
+            }
+        ]
+    },
+    {
+        "id": "28",
+        "address": "Rathausplatz 10",
+        "city": "München",
+        "state": "Bayern",
+        "zipcode": "80331",
+        "type": "Luxusapartment",
+        "price": 1500000,
+        "status": "verfügbar",
+        "description": "Ein exklusives Luxusapartment mit Panoramablick auf die Alpen.",
+        "monthlyCosts": 6000,
+        "owners": [
+            {
+                "name": "Herr und Frau Maier",
+                "type": "Privatperson",
+                "contact": {
+                    "phone": "+49 89 9876543",
+                    "email": "maier.muenchen@example.com",
+                    "address": "Rathausplatz 10, 80331 München"
+                }
+            }
+        ],
+        "financingOptions": [
+            {
+                "lender": "Münchner Bank",
+                "interestRate": 3.5,
+                "loanAmount": 1000000,
+                "durationMonths": 360,
+                "monthlyPayment": 4494.32
+            },
+            {
+                "lender": "Bayern Genossenschaftsbank",
+                "interestRate": 3.2,
+                "loanAmount": 1100000,
+                "durationMonths": 360,
+                "monthlyPayment": 4628.64
+            }
+        ]
+    },
+    {
+        "id": "29",
+        "address": "Schlossallee 1",
+        "city": "Stuttgart",
+        "state": "Baden-Württemberg",
+        "zipcode": "70173",
+        "type": "Schloss",
+        "price": 3000000,
+        "status": "verfügbar",
+        "description": "Ein majestätisches Schloss mit großem Park in exklusiver Lage.",
+        "monthlyCosts": 10000,
+        "owners": [
+            {
+                "name": "Stuttgarter Bank",
+                "type": "Bank",
+                "contact": {
+                    "phone": "+49 711 8765432",
+                    "email": "info@stuttgartbank.de",
+                    "address": "Schlossallee 1, 70173 Stuttgart"
+                }
+            }
+        ],
+        "financingOptions": [
+            {
+                "lender": "Stuttgarter Bank",
+                "interestRate": 3.0,
+                "loanAmount": 2000000,
+                "durationMonths": 360,
+                "monthlyPayment": 9487.88
+            },
+            {
+                "lender": "Baden-Württembergische Genossenschaftsbank",
+                "interestRate": 2.8,
+                "loanAmount": 2200000,
+                "durationMonths": 360,
+                "monthlyPayment": 9684.97
+            }
+        ]
+    },
+    {
+        "id": "30",
+        "address": "Schlossplatz 5",
+        "city": "Berlin",
+        "state": "Berlin",
+        "zipcode": "10178",
+        "type": "Penthouse",
+        "price": 2800000,
+        "status": "verfügbar",
+        "description": "Ein luxuriöses Penthouse mit Blick auf den Berliner Dom und die Spree.",
+        "monthlyCosts": 9000,
+        "owners": [
+            {
+                "name": "Herr und Frau Schmidt",
+                "type": "Privatperson",
+                "contact": {
+                    "phone": "+49 30 8765432",
+                    "email": "schmidt.berlin@example.com",
+                    "address": "Schlossplatz 5, 10178 Berlin"
+                }
+            }
+        ],
+        "financingOptions": [
+            {
+                "lender": "Berliner Bank",
+                "interestRate": 3.2,
+                "loanAmount": 1800000,
+                "durationMonths": 360,
+                "monthlyPayment": 8316.22
+            },
+            {
+                "lender": "Berlin Genossenschaftsbank",
+                "interestRate": 3.0,
+                "loanAmount": 2000000,
+                "durationMonths": 360,
+                "monthlyPayment": 8483.66
+            }
+        ]
+    }
+]
