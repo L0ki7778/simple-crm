@@ -1,28 +1,64 @@
 @import '../mixin.scss';
 
-#lead-container{
-    @include dFlex(space-between, center);
-    width: 100%;
+#lead-container {
+    @include dFlex(space-between, flex-start);
+    height: calc(100vh - 56px);
+    border: unset;
+
+    .example-container:first-child {
+        .lead-header {
+            border-left-color: #ccc;
+        }
+    }
+
+    .example-container:last-child {
+        .lead-header {
+            border-right-color: #ccc;
+        }
+    }
+
 }
+
+.lead-header {
+    @include dFlex(unset, center);
+    position: relative;
+    height: 50px;
+    background-color: #f7f7f7;
+    border: 1px solid #ccc;
+    border-left-color: transparent;
+    border-right-color: transparent;
+
+    h2 {
+        z-index: 2;
+        margin-block: 0;
+        margin-left: 1.2rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        max-width: 10vw;
+
+    }
+}
+
 
 .example-container {
     width: 400px;
     max-width: 100%;
-    margin: 0 25px 25px 0;
+    margin: 0 0 25px 0;
     display: inline-block;
     vertical-align: top;
-  }
-  
-  .example-list {
+}
+
+.example-list {
     border: solid 1px #ccc;
-    min-height: 60px;
+    min-height: 91vh;
     background: white;
     border-radius: 4px;
     overflow: hidden;
     display: block;
-  }
-  
-  .example-box {
+}
+
+.example-box {
     padding: 20px 10px;
     border-bottom: solid 1px #ccc;
     color: rgba(0, 0, 0, 0.87);
@@ -34,29 +70,57 @@
     cursor: move;
     background: white;
     font-size: 14px;
-  }
-  
-  .cdk-drag-preview {
+}
+
+.cdk-drag-preview {
     box-sizing: border-box;
     border-radius: 4px;
     box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2),
-                0 8px 10px 1px rgba(0, 0, 0, 0.14),
-                0 3px 14px 2px rgba(0, 0, 0, 0.12);
-  }
-  
-  .cdk-drag-placeholder {
+        0 8px 10px 1px rgba(0, 0, 0, 0.14),
+        0 3px 14px 2px rgba(0, 0, 0, 0.12);
+}
+
+.cdk-drag-placeholder {
     opacity: 0;
-  }
-  
-  .cdk-drag-animating {
+}
+
+.cdk-drag-animating {
     transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
-  }
-  
-  .example-box:last-child {
+}
+
+.example-box:last-child {
     border: none;
-  }
-  
-  .example-list.cdk-drop-list-dragging .example-box:not(.cdk-drag-placeholder) {
+}
+
+.example-list.cdk-drop-list-dragging .example-box:not(.cdk-drag-placeholder) {
     transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
-  }
-  
+}
+
+
+.example-container:not(:last-child)h2::after {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: 4;
+    top: 0;
+    right: -1.25rem;
+    width: 0;
+    height: 0;
+    border-width: 25px 0 25px 17px;
+    border-color: transparent transparent transparent #ccc;
+    border-style: solid;
+}
+
+.example-container:not(:first-child)h2::before {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-width: 25px 0 25px 17px;
+    border-color: transparent transparent transparent #f7f7f7;
+    border-style: solid;
+}

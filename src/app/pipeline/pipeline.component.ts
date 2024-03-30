@@ -3,6 +3,7 @@ import { FirestoreService } from '../firestore.service';
 import {CdkDragDrop, CdkDropList, CdkDrag, moveItemInArray} from '@angular/cdk/drag-drop';
 import { aW } from '@fullcalendar/core/internal-common';
 import { CustomPipe } from '../../models/pipe.class';
+import {  MatTooltipModule } from '@angular/material/tooltip';
 
 
 @Component({
@@ -10,7 +11,8 @@ import { CustomPipe } from '../../models/pipe.class';
   standalone: true,
   imports: [
     CdkDropList, 
-    CdkDrag
+    CdkDrag,
+    MatTooltipModule
   ],
   templateUrl: './pipeline.component.html',
   styleUrl: './pipeline.component.scss'

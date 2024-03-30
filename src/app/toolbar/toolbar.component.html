@@ -31,7 +31,7 @@
         </div>
         }
     </mat-toolbar>
-    <div class="router-container">
+    <div [ngClass]="{'pipeline': dealActive, 'router-container': !dealActive}">
         <router-outlet></router-outlet>
     </div>
 </mat-drawer-container>

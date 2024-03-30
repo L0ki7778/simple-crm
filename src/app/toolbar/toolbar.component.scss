@@ -3,7 +3,7 @@
 }
 
 .sidenav{
-    width: 300px;
+    width: 14rem;
 }
 
 .nav-list{
@@ -35,8 +35,13 @@
 .router-container{
     max-height: calc(100vh - 56px - 4rem);
     padding: 2rem 3rem;
-    
+};
+
+
+.pipeline{
+    height: calc(100vh - 56px - 4rem);
 }
+
 
 .logo-container{
     height: 55px;

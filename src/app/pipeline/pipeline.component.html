@@ -1,12 +1,23 @@
-<div cdkDropListGroup>
-    <div class="example-container">
-        <h2>To do</h2>
+<div 
+id="lead-container" 
+cdkDropListOrientation="horizontal" 
+cdkDropListGroup 
+cdkDropList 
+class="example-list"    
+(cdkDropListDropped)="drop($event)">
 
-        <div id="lead-container" cdkDropList class="example-list" (cdkDropListDropped)="drop($event)">
-
-            @for( index$ of pipeline; track index$) {
-            <div class="lead-status" cdkDrag>{{index$.title}}</div>
-            }
+    @for( pipe of pipeline; track pipe) {
+    <div class="example-container" cdkDrag>
+        <div class="lead-header">
+            <h2 [matTooltipPosition]="'above'" matTooltip={{pipe.title}}>{{pipe.title}}</h2>
         </div>
+
+        <div cdkDropList [cdkDropListData]="pipe.type" class="example-list">
+            <div class="lead-status" cdkDrag>{{pipe.title}}</div>
+        </div>
+
+
     </div>
+    }
+
 </div>

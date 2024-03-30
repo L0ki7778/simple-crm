@@ -8,6 +8,7 @@ import { FirestoreService } from '../firestore.service';
 import { MatDialog } from '@angular/material/dialog';
 import { DialogAddPipeComponent } from '../dialogs/dialog-add-pipe/dialog-add-pipe.component';
 import { CustomPipe } from '../../models/pipe.class';
+import { CommonModule } from '@angular/common';
 
 
 @Component({
@@ -21,6 +22,7 @@ import { CustomPipe } from '../../models/pipe.class';
     RouterOutlet,
     RouterLink,
     RouterLinkActive,
+    CommonModule
   ],
   templateUrl: './toolbar.component.html',
   styleUrl: './toolbar.component.scss'
