@@ -3,12 +3,12 @@ import { MatFabButton } from '@angular/material/button';
 import { MatIcon } from '@angular/material/icon';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatDialog } from '@angular/material/dialog';
-import { DialogAddUserComponent } from '../dialog-add-user/dialog-add-user.component';
 import { User } from '../../models/user.class';
 import { MatCardModule } from '@angular/material/card';
 import { FirestoreService } from '../firestore.service';
 import { CommonModule } from '@angular/common';
 import { RouterLink } from '@angular/router';
+import { DialogAddUserComponent } from '../dialogs/dialog-add-user/dialog-add-user.component';
 
 @Component({
   selector: 'app-user',

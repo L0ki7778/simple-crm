@@ -3,18 +3,33 @@
         <div class="logo-container">
             Logo
         </div>
-        <ul class="nav-list">
-            <li routerLink="/dashboard" routerLinkActive="router-link-active"><mat-icon>fact_check</mat-icon> Dashboard</li>
+        <ul class="nav-list" (click)="checkRoute()">
+            <li routerLink="/dashboard" routerLinkActive="router-link-active"><mat-icon>fact_check</mat-icon> Dashboard
+            </li>
             <li routerLink="/user" routerLinkActive="router-link-active"><mat-icon>perm_identity</mat-icon>User</li>
-            <li routerLink="/calendar" routerLinkActive="router-link-active"><mat-icon>perm_identity</mat-icon>User</li>
+            <li routerLink="/calendar" routerLinkActive="router-link-active"><mat-icon>calendar_month</mat-icon>Calendar
+            </li>
+            <li routerLink="/pipeline" routerLinkActive="router-link-active"><mat-icon>attach_money</mat-icon>Deals</li>
         </ul>
     </mat-drawer>
-    <mat-toolbar color="primary">
+    <mat-toolbar #toolbar color="primary">
         <button (click)="drawer.toggle()" mat-icon-button class="example-icon"
             aria-label="Example icon-button with menu icon">
             <mat-icon>menu</mat-icon>
         </button>
         <span>My App</span>
+        @if(dealActive){
+        <div id="pipe-head">
+            <div class="pipe-btn" id="left-pipe-head">
+                <mat-icon>add</mat-icon>
+                Deal
+            </div>
+            <div (click)="openNewPipeDialog()" class="pipe-btn" id="right-pipe-head">
+                <mat-icon>add_card</mat-icon>
+                Pipe
+            </div>
+        </div>
+        }
     </mat-toolbar>
     <div class="router-container">
         <router-outlet></router-outlet>

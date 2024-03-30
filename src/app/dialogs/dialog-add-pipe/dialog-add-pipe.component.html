@@ -1,0 +1,14 @@
+<mat-dialog-content>
+    <div>
+        <mat-form-field class="user-form-field" appearance="outline">
+            <mat-label>Title</mat-label>
+            <input [disabled]="isLoading"  matInput placeholder="Pipe-title" [(ngModel)]="pipe.title" >
+        </mat-form-field>
+    </div>
+</mat-dialog-content>
+<mat-dialog-actions>
+    <button [disabled]="isLoading" (click)="dialogRef.close()" mat-button>No Thanks</button>
+    <button [disabled]="isLoading" mat-button cdkFocusInitial (click)="creatPipe()">Ok</button>
+</mat-dialog-actions>
+
+

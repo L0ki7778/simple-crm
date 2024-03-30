@@ -4,10 +4,10 @@ import { MatDialogModule, MatDialogRef } from '@angular/material/dialog';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
-import { User } from '../../models/user.class';
+import { User } from '../../../models/user.class';
 import { MatButtonModule } from '@angular/material/button';
 import { CommonModule } from '@angular/common';
-import { FirestoreService } from '../firestore.service';
+import { FirestoreService } from '../../firestore.service';
 
 @Component({
   selector: 'app-dialog-edit-user',

@@ -1,8 +1,9 @@
 import { Injectable } from '@angular/core';
 import { inject } from '@angular/core';
-import { Firestore, collectionData, collection, addDoc, onSnapshot, getDoc, doc, updateDoc, CollectionReference, DocumentData } from '@angular/fire/firestore';
+import { Firestore, collectionData, collection, addDoc, onSnapshot, getDoc, doc, updateDoc, CollectionReference, DocumentData, setDoc } from '@angular/fire/firestore';
 import { Observable } from 'rxjs';
 import { User } from '../models/user.class';
+import { CustomPipe } from '../models/pipe.class';
 
 
 @Injectable({
@@ -11,16 +12,23 @@ import { User } from '../models/user.class';
 export class FirestoreService {
   fireStore: Firestore = inject(Firestore)
   items$?: Observable<any>;
+  dealActive = false;
   downloadedUserData = new User();
   userList: User[] = [];
+  pipeLine: CustomPipe[] = [];
   loadedUsers = false;
   unsubUserList: Function | undefined;
+  unsubPipeline: Function | undefined;
+  unsubSinglePipe: Function | undefined;
+  json = []
+
+
 
 
 
   constructor() {
     // this.addJson()
-   }
+  }
 
 
   /**
@@ -35,6 +43,10 @@ export class FirestoreService {
 
   singelUserRef(docId: string) {
     return doc(collection(this.fireStore, "users"), (docId));
+  }
+
+  singlePipeRef(docId: string) {
+    return doc(collection(this.fireStore, "Pipeline"), (docId));
   }
 
 
@@ -53,6 +65,13 @@ export class FirestoreService {
   }
 
 
+  updatePipe(docRef: string, docProperty: string, newValue: string | number) {
+    updateDoc(this.singlePipeRef(docRef), {
+      [docProperty]: newValue
+    })
+  }
+
+
   /**
    * Asynchronously adds a user to the user list.
    *
@@ -66,13 +85,20 @@ export class FirestoreService {
   }
 
 
-  // async addJson() {
-  //   debugger
-  //   this.json.forEach((item) => {
-  //     addDoc(collection(this.fireStore, "properties"), item)
-  //   })
-  // }
+  async addPipe(pipe: CustomPipe) {
+    const docRef = await addDoc(this.pipelineRef(), pipe.toJSON());
+    await setDoc(doc(this.fireStore, "Pipeline", docRef.id), {
+      ...pipe.toJSON(),
+      id: docRef.id
+    })
+  }
 
+
+  async addJson() {
+    this.json.forEach((item) => {
+      addDoc(collection(this.fireStore, "users"), item)
+    })
+  }
 
 
   /**
@@ -95,6 +121,21 @@ export class FirestoreService {
   };
 
 
+  getPipeline() {
+    if (this.unsubPipeline) this.unsubPipeline();
+    this.unsubPipeline = onSnapshot(this.pipelineRef(), (list) => {
+      this.pipeLine = [];
+      list.forEach((obj: any) => {
+        let pipe = obj.data() as CustomPipe;
+        if (!this.pipeLine.some(element=>{pipe.id === element.id})) {
+          this.pipeLine.push(pipe);
+          this.sortPipeAfterIndex() 
+        }
+      });
+    })
+  }
+
+
   /**
    * Sorts the user list by creation date.
    */
@@ -110,6 +151,15 @@ export class FirestoreService {
     });
   };
 
+
+  pipelineRef() {
+    return collection(this.fireStore, "Pipeline")
+  }
+
+
+sortPipeAfterIndex(){
+  this.pipeLine.sort((a, b) => {return a.index - b.index})
+}
 
 
   ngOnDestroy() {

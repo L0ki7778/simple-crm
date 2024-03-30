@@ -5,11 +5,11 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { provideNativeDateAdapter } from '@angular/material/core';
 import { MatButton } from '@angular/material/button';
-import { User } from '../../models/user.class';
+import { User } from '../../../models/user.class';
 import { FormsModule } from '@angular/forms';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
-import { FirestoreService } from '../firestore.service';
-import { NgIf } from '@angular/common';
+import { FirestoreService } from '../../firestore.service';
+import { CommonModule, NgIf } from '@angular/common';
 
 @Component({
   selector: 'app-dialog-add-user',
@@ -23,7 +23,7 @@ import { NgIf } from '@angular/common';
     MatButton,
     FormsModule,
     MatProgressBarModule,
-    NgIf
+    CommonModule
   ],
   templateUrl: './dialog-add-user.component.html',
   styleUrl: './dialog-add-user.component.scss'

@@ -1,7 +1,7 @@
 [
     {
-        "id": "1",
-        "address": "Hauptstraße 14",
+        "id":"",
+        "street": "Hauptstraße 14",
         "city": "Berlin",
         "state": "Berlin",
         "zipcode": "10115",
@@ -17,7 +17,7 @@
                 "contact": {
                     "phone": "+49 30 1234567",
                     "email": "info@bankderhauptstadt.de",
-                    "address": "Hauptstraße 1, 10115 Berlin"
+                    "street": "Hauptstraße 1, 10115 Berlin"
                 }
             }
         ],
@@ -39,8 +39,8 @@
         ]
     },
     {
-        "id": "8",
-        "address": "Seestraße 20",
+        "id":"",
+        "street": "Seestraße 20",
         "city": "Hamburg",
         "state": "Hamburg",
         "zipcode": "22089",
@@ -56,7 +56,7 @@
                 "contact": {
                     "phone": "+49 40 9876543",
                     "email": "familie.schmidt@example.com",
-                    "address": "Seestraße 20, 22089 Hamburg"
+                    "street": "Seestraße 20, 22089 Hamburg"
                 }
             }
         ],
@@ -78,8 +78,8 @@
         ]
     },
     {
-        "id": "9",
-        "address": "Lindenstraße 12",
+        "id":"",
+        "street": "Lindenstraße 12",
         "city": "München",
         "state": "Bayern",
         "zipcode": "80335",
@@ -95,7 +95,7 @@
                 "contact": {
                     "phone": "+49 89 654321",
                     "email": "wagner.m@example.com",
-                    "address": "Lindenstraße 12, 80335 München"
+                    "street": "Lindenstraße 12, 80335 München"
                 }
             }
         ],
@@ -117,8 +117,8 @@
         ]
     },
     {
-        "id": "10",
-        "address": "Kaiserstraße 5",
+        "id":"",
+        "street": "Kaiserstraße 5",
         "city": "Frankfurt",
         "state": "Hessen",
         "zipcode": "60311",
@@ -134,7 +134,7 @@
                 "contact": {
                     "phone": "+49 69 8765432",
                     "email": "becker.f@example.com",
-                    "address": "Kaiserstraße 5, 60311 Frankfurt"
+                    "street": "Kaiserstraße 5, 60311 Frankfurt"
                 }
             }
         ],
@@ -156,8 +156,8 @@
         ]
     },
     {
-        "id": "11",
-        "address": "Schlossstraße 8",
+        "id":"",
+        "street": "Schlossstraße 8",
         "city": "Stuttgart",
         "state": "Baden-Württemberg",
         "zipcode": "70173",
@@ -173,7 +173,7 @@
                 "contact": {
                     "phone": "+49 711 7654321",
                     "email": "mayer.family@example.com",
-                    "address": "Schlossstraße 8, 70173 Stuttgart"
+                    "street": "Schlossstraße 8, 70173 Stuttgart"
                 }
             }
         ],
@@ -195,8 +195,8 @@
         ]
     },
     {
-        "id": "12",
-        "address": "Domplatz 1",
+        "id":"",
+        "street": "Domplatz 1",
         "city": "Köln",
         "state": "Nordrhein-Westfalen",
         "zipcode": "50667",
@@ -212,7 +212,7 @@
                 "contact": {
                     "phone": "+49 221 654321",
                     "email": "schulz@example.com",
-                    "address": "Domplatz 1, 50667 Köln"
+                    "street": "Domplatz 1, 50667 Köln"
                 }
             }
         ],
@@ -234,8 +234,8 @@
         ]
     },
     {
-        "id": "13",
-        "address": "Am Markt 3",
+        "id":"",
+        "street": "Am Markt 3",
         "city": "Düsseldorf",
         "state": "Nordrhein-Westfalen",
         "zipcode": "40213",
@@ -251,7 +251,7 @@
                 "contact": {
                     "phone": "+49 211 9876543",
                     "email": "weber@example.com",
-                    "address": "Am Markt 3, 40213 Düsseldorf"
+                    "street": "Am Markt 3, 40213 Düsseldorf"
                 }
             }
         ],
@@ -273,8 +273,8 @@
         ]
     },
     {
-        "id": "14",
-        "address": "Kaiser-Wilhelm-Ring 22",
+        "id":"",
+        "street": "Kaiser-Wilhelm-Ring 22",
         "city": "Bonn",
         "state": "Nordrhein-Westfalen",
         "zipcode": "53113",
@@ -290,7 +290,7 @@
                 "contact": {
                     "phone": "+49 228 7654321",
                     "email": "mueller@example.com",
-                    "address": "Kaiser-Wilhelm-Ring 22, 53113 Bonn"
+                    "street": "Kaiser-Wilhelm-Ring 22, 53113 Bonn"
                 }
             }
         ],
@@ -312,8 +312,8 @@
         ]
     },
     {
-        "id": "15",
-        "address": "Rheinuferstraße 5",
+        "id":"",
+        "street": "Rheinuferstraße 5",
         "city": "Koblenz",
         "state": "Rheinland-Pfalz",
         "zipcode": "56068",
@@ -329,7 +329,7 @@
                 "contact": {
                     "phone": "+49 261 8765432",
                     "email": "schneider@example.com",
-                    "address": "Rheinuferstraße 5, 56068 Koblenz"
+                    "street": "Rheinuferstraße 5, 56068 Koblenz"
                 }
             }
         ],
@@ -351,8 +351,8 @@
         ]
     },
     {
-        "id": "16",
-        "address": "Hermannstraße 10",
+        "id":"",
+        "street": "Hermannstraße 10",
         "city": "Dresden",
         "state": "Sachsen",
         "zipcode": "01067",
@@ -368,7 +368,7 @@
                 "contact": {
                     "phone": "+49 351 9876543",
                     "email": "schmidt@example.com",
-                    "address": "Hermannstraße 10, 01067 Dresden"
+                    "street": "Hermannstraße 10, 01067 Dresden"
                 }
             }
         ],
@@ -390,8 +390,8 @@
         ]
     },
     {
-        "id": "17",
-        "address": "Rathausplatz 8",
+        "id":"",
+        "street": "Rathausplatz 8",
         "city": "Nürnberg",
         "state": "Bayern",
         "zipcode": "90403",
@@ -407,7 +407,7 @@
                 "contact": {
                     "phone": "+49 911 8765432",
                     "email": "wagner.n@example.com",
-                    "address": "Rathausplatz 8, 90403 Nürnberg"
+                    "street": "Rathausplatz 8, 90403 Nürnberg"
                 }
             }
         ],
@@ -429,8 +429,8 @@
         ]
     },
     {
-        "id": "18",
-        "address": "Rheinstraße 15",
+        "id":"",
+        "street": "Rheinstraße 15",
         "city": "Mainz",
         "state": "Rheinland-Pfalz",
         "zipcode": "55116",
@@ -446,7 +446,7 @@
                 "contact": {
                     "phone": "+49 6131 7654321",
                     "email": "mueller.mainz@example.com",
-                    "address": "Rheinstraße 15, 55116 Mainz"
+                    "street": "Rheinstraße 15, 55116 Mainz"
                 }
             }
         ],
@@ -468,8 +468,8 @@
         ]
     },
     {
-        "id": "19",
-        "address": "Am Markt 10",
+        "id":"",
+        "street": "Am Markt 10",
         "city": "Hannover",
         "state": "Niedersachsen",
         "zipcode": "30159",
@@ -485,7 +485,7 @@
                 "contact": {
                     "phone": "+49 511 8765432",
                     "email": "schneider.h@example.com",
-                    "address": "Am Markt 10, 30159 Hannover"
+                    "street": "Am Markt 10, 30159 Hannover"
                 }
             }
         ],
@@ -507,8 +507,8 @@
         ]
     },
     {
-        "id": "20",
-        "address": "Schlossplatz 1",
+        "id":"",
+        "street": "Schlossplatz 1",
         "city": "Schwerin",
         "state": "Mecklenburg-Vorpommern",
         "zipcode": "19053",
@@ -524,7 +524,7 @@
                 "contact": {
                     "phone": "+49 385 9876543",
                     "email": "info@lbmv.de",
-                    "address": "Schlossplatz 1, 19053 Schwerin"
+                    "street": "Schlossplatz 1, 19053 Schwerin"
                 }
             }
         ],
@@ -546,8 +546,8 @@
         ]
     },
     {
-        "id": "21",
-        "address": "Marktplatz 5",
+        "id":"",
+        "street": "Marktplatz 5",
         "city": "Erfurt",
         "state": "Thüringen",
         "zipcode": "99084",
@@ -563,7 +563,7 @@
                 "contact": {
                     "phone": "+49 361 8765432",
                     "email": "lehmann.erfurt@example.com",
-                    "address": "Marktplatz 5, 99084 Erfurt"
+                    "street": "Marktplatz 5, 99084 Erfurt"
                 }
             }
         ],
@@ -585,8 +585,8 @@
         ]
     },
     {
-        "id": "22",
-        "address": "Bahnhofstraße 3",
+        "id":"",
+        "street": "Bahnhofstraße 3",
         "city": "Halle (Saale)",
         "state": "Sachsen-Anhalt",
         "zipcode": "06112",
@@ -602,7 +602,7 @@
                 "contact": {
                     "phone": "+49 345 7654321",
                     "email": "schmidt.halle@example.com",
-                    "address": "Bahnhofstraße 3, 06112 Halle (Saale)"
+                    "street": "Bahnhofstraße 3, 06112 Halle (Saale)"
                 }
             }
         ],
@@ -624,8 +624,8 @@
         ]
     },
     {
-        "id": "23",
-        "address": "Wiesenweg 2",
+        "id":"",
+        "street": "Wiesenweg 2",
         "city": "Rostock",
         "state": "Mecklenburg-Vorpommern",
         "zipcode": "18057",
@@ -641,7 +641,7 @@
                 "contact": {
                     "phone": "+49 381 8765432",
                     "email": "becker.rostock@example.com",
-                    "address": "Wiesenweg 2, 18057 Rostock"
+                    "street": "Wiesenweg 2, 18057 Rostock"
                 }
             }
         ],
@@ -663,8 +663,8 @@
         ]
     },
     {
-        "id": "24",
-        "address": "Hafenstraße 10",
+        "id":"",
+        "street": "Hafenstraße 10",
         "city": "Kiel",
         "state": "Schleswig-Holstein",
         "zipcode": "24103",
@@ -680,7 +680,7 @@
                 "contact": {
                     "phone": "+49 431 9876543",
                     "email": "petersen@example.com",
-                    "address": "Hafenstraße 10, 24103 Kiel"
+                    "street": "Hafenstraße 10, 24103 Kiel"
                 }
             }
         ],
@@ -702,8 +702,8 @@
         ]
     },
     {
-        "id": "25",
-        "address": "Ludwigstraße 7",
+        "id":"",
+        "street": "Ludwigstraße 7",
         "city": "Wiesbaden",
         "state": "Hessen",
         "zipcode": "65185",
@@ -719,7 +719,7 @@
                 "contact": {
                     "phone": "+49 611 8765432",
                     "email": "schneider.wiesbaden@example.com",
-                    "address": "Ludwigstraße 7, 65185 Wiesbaden"
+                    "street": "Ludwigstraße 7, 65185 Wiesbaden"
                 }
             }
         ],
@@ -741,8 +741,8 @@
         ]
     },
     {
-        "id": "26",
-        "address": "Rheinstraße 1",
+        "id":"",
+        "street": "Rheinstraße 1",
         "city": "Düsseldorf",
         "state": "Nordrhein-Westfalen",
         "zipcode": "40213",
@@ -758,7 +758,7 @@
                 "contact": {
                     "phone": "+49 211 7654321",
                     "email": "mueller.duesseldorf@example.com",
-                    "address": "Rheinstraße 1, 40213 Düsseldorf"
+                    "street": "Rheinstraße 1, 40213 Düsseldorf"
                 }
             }
         ],
@@ -780,8 +780,8 @@
         ]
     },
     {
-        "id": "27",
-        "address": "Friedrichstraße 15",
+        "id":"",
+        "street": "Friedrichstraße 15",
         "city": "Potsdam",
         "state": "Brandenburg",
         "zipcode": "14467",
@@ -797,7 +797,7 @@
                 "contact": {
                     "phone": "+49 331 8765432",
                     "email": "wagner.potsdam@example.com",
-                    "address": "Friedrichstraße 15, 14467 Potsdam"
+                    "street": "Friedrichstraße 15, 14467 Potsdam"
                 }
             }
         ],
@@ -819,8 +819,8 @@
         ]
     },
     {
-        "id": "28",
-        "address": "Rathausplatz 10",
+        "id":"",
+        "street": "Rathausplatz 10",
         "city": "München",
         "state": "Bayern",
         "zipcode": "80331",
@@ -836,7 +836,7 @@
                 "contact": {
                     "phone": "+49 89 9876543",
                     "email": "maier.muenchen@example.com",
-                    "address": "Rathausplatz 10, 80331 München"
+                    "street": "Rathausplatz 10, 80331 München"
                 }
             }
         ],
@@ -858,8 +858,8 @@
         ]
     },
     {
-        "id": "29",
-        "address": "Schlossallee 1",
+        "id":"",
+        "street": "Schlossallee 1",
         "city": "Stuttgart",
         "state": "Baden-Württemberg",
         "zipcode": "70173",
@@ -875,7 +875,7 @@
                 "contact": {
                     "phone": "+49 711 8765432",
                     "email": "info@stuttgartbank.de",
-                    "address": "Schlossallee 1, 70173 Stuttgart"
+                    "street": "Schlossallee 1, 70173 Stuttgart"
                 }
             }
         ],
@@ -897,8 +897,8 @@
         ]
     },
     {
-        "id": "30",
-        "address": "Schlossplatz 5",
+        "id":"",
+        "street": "Schlossplatz 5",
         "city": "Berlin",
         "state": "Berlin",
         "zipcode": "10178",
@@ -914,7 +914,7 @@
                 "contact": {
                     "phone": "+49 30 8765432",
                     "email": "schmidt.berlin@example.com",
-                    "address": "Schlossplatz 5, 10178 Berlin"
+                    "street": "Schlossplatz 5, 10178 Berlin"
                 }
             }
         ],

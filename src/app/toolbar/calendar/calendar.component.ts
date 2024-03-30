@@ -6,7 +6,7 @@ import { CalendarOptions, EventInput } from '@fullcalendar/core';
 import dayGridPlugin from '@fullcalendar/daygrid';
 import interactionPlugin from '@fullcalendar/interaction';
 import { FullCalendarModule } from '@fullcalendar/angular';
-import { DialogCalendarComponent } from '../dialog-calendar/dialog-calendar.component';
+import { DialogCalendarComponent } from '../../dialogs/dialog-calendar/dialog-calendar.component';
 import timeGridPlugin from '@fullcalendar/timegrid'; // Import für Tagesansicht
 
 

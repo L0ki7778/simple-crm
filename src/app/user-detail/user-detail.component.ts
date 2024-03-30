@@ -6,7 +6,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatDialog } from '@angular/material/dialog';
-import { DialogEditUserComponent } from '../dialog-edit-user/dialog-edit-user.component';
+import { DialogEditUserComponent } from '../dialogs/dialog-edit-user/dialog-edit-user.component';
 import { User } from '../../models/user.class';
 import { CommonModule } from '@angular/common';
 
