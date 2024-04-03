@@ -19,3 +19,11 @@
   matTooltip="Add user" (click)="openDialog()">
   <mat-icon>add</mat-icon>
 </button>
+
+
+
+<button id="test-btn" (click)="testFunction()">test</button>
+@if(test){
+  {{this.console()}}
+  <div id="test-div">test</div>
+}

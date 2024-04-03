@@ -37,7 +37,6 @@ pipeline = this.firestore.pipeLine;
     this.firestore.pipeLine.forEach((pipe: CustomPipe) => {
       pipe.index = this.pipeline.indexOf(pipe);
       this.firestore.updatePipe(pipe.id, "index", pipe.index)
-      this.firestore.pipeLine = this.pipeline;
     })
   }
 }

@@ -9,6 +9,7 @@ import { MatDialog } from '@angular/material/dialog';
 import { DialogAddPipeComponent } from '../dialogs/dialog-add-pipe/dialog-add-pipe.component';
 import { CustomPipe } from '../../models/pipe.class';
 import { CommonModule } from '@angular/common';
+import { DialogAddDealComponent } from '../dialogs/dialog-add-deal/dialog-add-deal.component';
 
 
 @Component({
@@ -48,7 +49,13 @@ export class ToolbarComponent {
     }
   }
 
+
   openNewPipeDialog() {
     this.dialog.open(DialogAddPipeComponent);
+  }
+
+
+  openNewDealDialog() {
+    this.dialog.open(DialogAddDealComponent);
   }
 }

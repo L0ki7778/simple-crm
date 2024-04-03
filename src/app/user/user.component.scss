@@ -40,3 +40,23 @@ table {
         }
     }
 }
+
+#test-div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5rem;
+    height: 5rem;
+    border:5px solid red;
+    font-weight: bold;
+}
+
+#test-btn{
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    width: 5rem;
+    background-color: red;
+    color:white;
+    font-weight: bold;
+}

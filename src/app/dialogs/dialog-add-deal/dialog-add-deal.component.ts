@@ -1,19 +1,18 @@
 import { CommonModule } from '@angular/common';
 import { Component, inject } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { MatButtonModule } from '@angular/material/button';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatDialogModule, MatDialogRef } from '@angular/material/dialog';
 import { MatFormFieldModule } from '@angular/material/form-field';
-import { FormsModule } from '@angular/forms';
-import { provideNativeDateAdapter } from '@angular/material/core';
 import { MatInputModule } from '@angular/material/input';
-import { CustomPipe } from '../../../models/pipe.class';
-import { MatButtonModule } from '@angular/material/button';
 import { FirestoreService } from '../../firestore.service';
+import { DialogAddPipeComponent } from '../dialog-add-pipe/dialog-add-pipe.component';
+import { CustomPipe } from '../../../models/pipe.class';
 
 @Component({
-  selector: 'app-dialog-add-pipe',
+  selector: 'app-dialog-add-deal',
   standalone: true,
-  providers: [provideNativeDateAdapter()],
   imports: [
     CommonModule,
     MatDialogModule,
@@ -23,10 +22,10 @@ import { FirestoreService } from '../../firestore.service';
     MatButtonModule,
     FormsModule
   ],
-  templateUrl: './dialog-add-pipe.component.html',
-  styleUrl: './dialog-add-pipe.component.scss'
+  templateUrl: './dialog-add-deal.component.html',
+  styleUrl: './dialog-add-deal.component.scss'
 })
-export class DialogAddPipeComponent {
+export class DialogAddDealComponent {
   pipe = new CustomPipe();
   firestore = inject(FirestoreService)
   isLoading = false;

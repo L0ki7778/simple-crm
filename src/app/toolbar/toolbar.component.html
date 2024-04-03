@@ -20,11 +20,11 @@
         <span>My App</span>
         @if(dealActive){
         <div id="pipe-head">
-            <div class="pipe-btn" id="left-pipe-head">
+            <div (click)="openNewDealDialog()" class="pipe-btn" id="new-deal">
                 <mat-icon>add</mat-icon>
                 Deal
             </div>
-            <div (click)="openNewPipeDialog()" class="pipe-btn" id="right-pipe-head">
+            <div (click)="openNewPipeDialog()" class="pipe-btn" id="new-pipe">
                 <mat-icon>add_card</mat-icon>
                 Pipe
             </div>

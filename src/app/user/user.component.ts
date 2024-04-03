@@ -27,12 +27,43 @@ import { DialogAddUserComponent } from '../dialogs/dialog-add-user/dialog-add-us
 export class UserComponent {
 
   user: User = new User();
-  fireService = inject(FirestoreService)
+  fireService = inject(FirestoreService);
+  test=false;
 
   constructor(public dialog: MatDialog) {
     
     
    }
+
+
+
+
+
+
+   
+
+
+   testFunction(){
+    if(this.test){
+      this.test=false
+    }else{
+      this.test=true;
+    }
+   }
+
+   console(){
+    console.log("Change detected!")
+   }
+
+
+
+
+
+
+
+
+
+
 
   async ngOnInit(): Promise<void> {
     await this.fireService.getUserList();
